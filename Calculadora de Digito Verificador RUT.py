@@ -1,3 +1,6 @@
+"""
+Calculadora que permite conocer el digito verificador de un RUT.
+"""
 # Definición de la función, para calcular el dígito verificador
 def calcular_digito_verificador(rut):
     # Lista de números para ponderar los dígitos del RUT
