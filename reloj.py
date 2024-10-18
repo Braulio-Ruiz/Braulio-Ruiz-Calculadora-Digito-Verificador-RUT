@@ -1,5 +1,6 @@
 # Importa el módulo 'time' para usar la función sleep y pausar la ejecución.
 import time
+
 # Importa 'datetime' para obtener la fecha y hora actuales.
 from datetime import datetime
 
