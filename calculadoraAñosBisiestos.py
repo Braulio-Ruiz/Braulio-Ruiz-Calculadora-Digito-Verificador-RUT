@@ -1,6 +1,7 @@
 """
 Calculadora de Años Bisiestos, dependiendo del año de nacimiento.
 """
+
 # Solicitamos el año de nacimiento como entrada del usuario
 año_nacimiento = int(input("Ingrese el año de nacimiento: "))
 
@@ -10,7 +11,9 @@ año_muerte = int(input("Ingrese el año de muerte (o 0 si está vivo): "))
 # Si el año de muerte es 0, lo reemplazamos con el año actual
 if año_muerte == 0:
     import datetime
+
     año_muerte = datetime.date.today().year
+
 
 # Función para determinar si un año es bisiesto
 def es_bisiesto(año):
@@ -19,6 +22,7 @@ def es_bisiesto(año):
         return True
     else:
         return False
+
 
 # Contador para llevar un registro de los años bisiestos
 cantidad_bisiestos = 0
@@ -30,4 +34,3 @@ for año in range(año_nacimiento, año_muerte + 1):
 
 # Imprimimos la cantidad de años bisiestos vividos
 print(f"La cantidad de años bisiestos vividos es: {cantidad_bisiestos}")
-
