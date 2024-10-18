@@ -1,6 +1,7 @@
 """
 Calculadora que permite conocer el digito verificador de un RUT.
 """
+
 # Definición de la función, para calcular el dígito verificador
 def calcular_digito_verificador(rut):
     # Lista de números para ponderar los dígitos del RUT
@@ -16,11 +17,12 @@ def calcular_digito_verificador(rut):
 
     # Comprobamos el resto para determinar el dígito verificador
     if resto == 0:
-        return '0'
+        return "0"
     elif resto == 1:
-        return 'K'
+        return "K"
     else:
         return str(11 - resto)  # Restamos el resto a 11 para obtener el dígito
+
 
 # Solicitamos al usuario que ingrese el RUT
 rut_ingresado = input("Por favor, escribe tu RUT sin digito verificador: ")
