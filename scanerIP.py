@@ -1,3 +1,5 @@
+#Scanner de puertos de una direccion IP
+
 import nmap
 
 scanner = nmap.PortScanner(nmap_search_path=["C:\\Program Files (x86)\\Nmap\\nmap.exe"])
